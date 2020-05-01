@@ -1,0 +1,36 @@
+{
+  "log_file": "output.log",
+  "email_notifications":
+  {
+    "sender_email": "spam@gmail.com",
+    "sender_password": "SpamEmailPassword",
+    "receiver_email": "main@gmail.com"
+  },
+  "chromedriver_executable": "chromedriver.exe",
+  "time_to_run": "09:00:00",
+  "default_wait_in_millis": "5000",
+  "run_duration_in_minutes": "10",
+  "randomize_order_of_students": "true",
+  "student_info": [
+    {
+      "email": "smithj@school.org",
+      "password": "JoeSmit123",
+      "google_class_link": "https://classroom.google.com/u/0/c/GUtfGYghuikJ",
+      "cssSelectorsWithActions": [
+        {"cssSelector_for_first_name_input_field": "Joe"},
+        {"cssSelector_for_last_name_input_field": "Smith"},
+        {"cssSelector_for_grade_input_field": "Freshman"},
+        {"cssSelector_for_submit_button": "click"}
+      ]
+    },
+    {
+      "email": "serbeej@otherschool.org",
+      "password": "ILOVEPUPPIES888",
+      "google_class_link": "https://classroom.google.com/u/0/c/tyHUNhtfCghj",
+      "cssSelectorsWithActions": [
+        {"cssSelector_for_name_input_field": "Jake Serbee"},
+        {"cssSelector_for_submit_button": "click"}
+      ]
+    }
+  ]
+}
