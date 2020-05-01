@@ -106,7 +106,7 @@ This email must have 3rd party access enabled [here](https://myaccount.google.co
 `receiver_email` specifies the email that bot activity should be sent to.
 
 `chromedriver_executable`:
-Necessary. Specifies the path to the Chrome Driver executable mentioned in the [requirements section](https://github.com/ThatcherDev/AttendanceBot#Requirments).
+Necessary. Specifies the path to the Chrome Driver executable mentioned in the [requirements section](https://github.com/ThatcherDev/AttendanceBot#requirements).
 
 `time_to_run`:
 Necessary. Specifies the time to start the bot every weekday.
@@ -132,4 +132,4 @@ to find the CSS Selector of an element on the page, left click this element and 
 
 ## License
 - [MIT](https://choosealicense.com/licenses/mit/)
-- Copyright 2020 ©️ ThatcherDev.
+- Copyright 2020 © ThatcherDev.
