@@ -72,7 +72,7 @@ public class AttendanceBot {
 			}
 			String chromedriverExecutable = json.getString("chromedriver_executable");
 			LocalTime timeToRun = LocalTime.parse(json.getString("time_to_run"));
-			int defaultWait = Integer.parseInt(json.getString("default_wait_in_millis"));
+			long defaultWait = Integer.parseInt(json.getString("default_wait_in_millis"));
 
 			log("Bot started");
 
@@ -113,8 +113,8 @@ public class AttendanceBot {
 								studentInfoJson.getString("google_class_link"), cssSelectorsWithActions, defaultWait);
 						bot.start();
 
-						if (k != (studentInfoList.size() - 1) && json.has("run_duration_in_minutes") && json.getString("run_duration_in_minutes").matches("[0-9]+"))
-							Thread.sleep((Integer.parseInt(json.getString("run_duration_in_minutes")) * 60 * 1000) / (studentInfoList.size() - 1));
+						if ((k != (studentInfoList.size() - 1)) && (json.has("run_duration_in_minutes") && json.getString("run_duration_in_minutes").matches("[0-9]+")))
+							Thread.sleep((long) (((Integer.parseInt(json.getString("run_duration_in_minutes")) * 60 * 1000) / (studentInfoList.size() - 1)) - (defaultWait * (7.2 + cssSelectorsWithActions.size()))));
 					}
 					log("Finished for " + nextTimeToRun);
 				} else

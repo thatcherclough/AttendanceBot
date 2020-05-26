@@ -15,9 +15,9 @@ public class Bot {
 	private final String password;
 	private final String googleClassLink;
 	private final Map<String, String> cssSelectorsWithActions;
-	private final int defaultWait;
+	private final long defaultWait;
 
-	public Bot(String chromedriverExecutable, String email, String password, String googleClassLink, Map<String, String> cssSelectorsWithActions, int defaultWait) {
+	public Bot(String chromedriverExecutable, String email, String password, String googleClassLink, Map<String, String> cssSelectorsWithActions, long defaultWait) {
 		System.setProperty("webdriver.chrome.driver", chromedriverExecutable);
 		this.email = email;
 		this.password = password;
@@ -111,7 +111,7 @@ public class Bot {
 	 * @param driver   WebDriver
 	 * @throws InterruptedException
 	 */
-	private static void login(String email, String password, int wait, WebDriver driver) throws InterruptedException {
+	private static void login(String email, String password, long wait, WebDriver driver) throws InterruptedException {
 		WebElement emailInput = driver.findElement(By.cssSelector("#identifierId"));
 		WebElement nextButton = driver.findElement(By.cssSelector(".RveJvd"));
 		emailInput.sendKeys(email);
@@ -177,7 +177,7 @@ public class Bot {
 	 * @param driver                  WebDriver
 	 * @throws InterruptedException
 	 */
-	private static void fillOutForm(Map<String, String> cssSelectorsWithActions, int wait, WebDriver driver) throws InterruptedException {
+	private static void fillOutForm(Map<String, String> cssSelectorsWithActions, long wait, WebDriver driver) throws InterruptedException {
 		for (Map.Entry<String, String> entry : cssSelectorsWithActions.entrySet()) {
 			WebElement element = driver.findElement(By.cssSelector(entry.getKey()));
 
