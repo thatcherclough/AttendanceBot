@@ -1,4 +1,4 @@
-package com.thatcherdev.attendancebot;
+package dev.thatcherclough.attendancebot;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -140,7 +140,7 @@ public class Bot {
 
 		List<WebElement> posts = driver.findElement(By.cssSelector("#ow43 > div:nth-child(2)")).findElements(By.cssSelector("*"));
 		for (WebElement post : posts)
-			if (post.getText().toLowerCase().contains(month.toLowerCase()) && post.getText().contains(day)) {
+			if (post.getText().toLowerCase().contains(month.toLowerCase()) && post.getText().contains(day) && post.getText().toLowerCase().contains("attendance")) {
 				ret = post;
 				break;
 			}
