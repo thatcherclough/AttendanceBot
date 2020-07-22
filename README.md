@@ -18,7 +18,7 @@ This bot automates signing in for attendance by:
 ## Before you continue
 This is a proof of concept and is tailored to my school's attendance system. 
 That being said, the bot can be configured to fit your situation using a JSON configuration file. 
-The syntax for this file can be found in the [Usage section](https://github.com/ThatcherDev/AttendanceBot#Usage).
+The syntax for this file can be found in the [Usage section](https://github.com/thatcherclough/AttendanceBot#Usage).
 
 ## Requirements
 - A Java JDK distribution >=8 must be installed and added to PATH.
@@ -28,7 +28,7 @@ The syntax for this file can be found in the [Usage section](https://github.com/
 ## Installation
 ```
 # clone AttendanceBot
-git clone https://github.com/ThatcherDev/AttendanceBot.git
+git clone https://github.com/thatcherclough/AttendanceBot.git
 
 # change the working directory to AttendanceBot
 cd AttendanceBot
@@ -41,7 +41,7 @@ mvnw.cmd clean package
 sh mvnw clean package
 ```
 
-Alternatively, you can download the jar from the [release page](https://github.com/ThatcherDev/AttendanceBot/releases).
+Alternatively, you can download the jar from the [release page](https://github.com/thatcherclough/AttendanceBot/releases).
 
 ## Usage
 ```
@@ -106,7 +106,7 @@ This email must have 3rd party access enabled [here](https://myaccount.google.co
 `receiver_email` specifies the email that bot activity should be sent to.
 
 `chromedriver_executable`:
-Necessary. Specifies the path to the Chrome Driver executable mentioned in the [requirements section](https://github.com/ThatcherDev/AttendanceBot#requirements).
+Necessary. Specifies the path to the Chrome Driver executable mentioned in the [requirements section](https://github.com/thatcherclough/AttendanceBot#requirements).
 
 `time_to_run`:
 Necessary. Specifies the time to start the bot every weekday.
@@ -132,4 +132,4 @@ to find the CSS Selector of an element on the page, left click this element and 
 
 ## License
 - [MIT](https://choosealicense.com/licenses/mit/)
-- Copyright 2020 © ThatcherDev.
+- Copyright 2020 © Thatcher Clough.

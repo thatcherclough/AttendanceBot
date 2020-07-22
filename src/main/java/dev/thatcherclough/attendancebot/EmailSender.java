@@ -1,4 +1,4 @@
-package com.thatcherdev.attendancebot;
+package dev.thatcherclough.attendancebot;
 
 import java.util.Properties;
 import javax.mail.MessagingException;

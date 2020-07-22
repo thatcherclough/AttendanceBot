@@ -1,4 +1,4 @@
-package com.thatcherdev.attendancebot;
+package dev.thatcherclough.attendancebot;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -17,7 +17,7 @@ public class AttendanceBot {
 	private static String configFile = null;
 	private static PrintWriter out = null;
 	private static EmailSender emailSender = null;
-	private static final String help = "AttendanceBot: A bot used to automate filling out Google Forms for school attendance (1.0.1)\n\nUsage:\n\tjava -jar attendancebot" +
+	private static final String help = "AttendanceBot: A bot used to automate filling out Google Forms for school attendance (1.0.2)\n\nUsage:\n\tjava -jar attendancebot" +
 			".jar [-h] [-v] [-f CONFIG JSON FILE]\n\nArguments:\n\t-h,  --help\t\tDisplay this message.\n\t-v,  --version\t\tDisplay current version.\n\t-f,  " +
 			"--file\t\tSpecify JSON configuration file. (See README for example)";
 

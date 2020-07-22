@@ -8,8 +8,8 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.thatcherdev</groupId>
-    <artifactId>attendancebot</artifactId>
+    <groupId>dev.thatcherclough</groupId>
+    <artifactId>AttendanceBot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>AttendanceBot</name>
     <description>A bot used to automate filling out Google Forms for school attendance.</description>
@@ -66,7 +66,7 @@
                         <phase>package</phase>
                         <configuration>
                             <finalName>attendancebot</finalName>
-                            <mainClass>com.thatcherdev.attendancebot.AttendanceBot</mainClass>
+                            <mainClass>dev.thatcherclough.attendancebot.AttendanceBot</mainClass>
                             <outputDirectory>${project.basedir}</outputDirectory>
                         </configuration>
                         <goals>
